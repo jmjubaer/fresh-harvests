@@ -6,7 +6,7 @@ import { useGetAllProductsQuery } from "@/redux/features/product/productApi";
 
 const Products = () => {
     const { data, isError } = useGetAllProductsQuery(undefined);
-    // console.log(data);
+    console.log(data);
     // console.log(isError);
     return (
         <div className='container pt-40'>
