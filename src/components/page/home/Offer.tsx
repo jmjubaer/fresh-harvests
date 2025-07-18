@@ -1,0 +1,20 @@
+import SectionTag from "@/components/shered/ui/SectionTag";
+import Image from "next/image";
+import fruitImage from "@/assets/offer.png";
+const Offer = () => {
+    return (
+        <div className="bg-[#eeecec] py-24 relative">
+            <div className='container'>
+                <SectionTag tag='Special Offer' />
+                <h2 className="text-[80px] font-medium">Seasonal Fruit Bundle</h2>
+                <p className="text-5xl font-medium mt-2">
+                    Discount up to <span className="text-primary">80% OFF</span>
+                </p>
+                <span className="text-[32px] px-8 py-4 font-semibold bg-[#176D38] rounded-full text-white mt-8 inline-block">CODE : <span className="text-[#FAC714]">FRESH28</span></span>
+            </div>
+            <Image src={fruitImage} alt="Fruit Offer" className="absolute right-0 bottom-0" />
+        </div>
+    );
+};
+
+export default Offer;
