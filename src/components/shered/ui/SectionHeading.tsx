@@ -6,10 +6,10 @@ type TProps = {
 };
 const SectionHeading = ({ tag, title, description }: TProps) => {
     return (
-        <div className='w-[40%] mx-auto text-center'>
+        <div className='w-[50%] mx-auto text-center'>
             <SectionTag tag={tag} />
             <h2 className='mt-4 text-5xl font-medium'>{title}</h2>
-            <p className='mt-4 text-sm font-secondary'>{description}</p>
+            <p className='mt-4 text-sm font-secondary w-4/5 mx-auto'>{description}</p>
         </div>
     );
 };
