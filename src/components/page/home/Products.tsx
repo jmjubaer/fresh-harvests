@@ -12,8 +12,9 @@ const Products = () => {
             <div className='w-[40%] mx-auto text-center'>
                 <SectionTag tag='Our Products' />
                 <h2 className="mt-4 text-5xl font-medium">Our Fresh Products</h2>
-                <p className="mt-4 text-sm">We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients.</p>
+                <p className="mt-4 text-sm font-secondary">We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients.</p>
             </div>
+            <div className="mt-8"></div>
         </div>
     );
 };

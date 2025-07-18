@@ -15,7 +15,7 @@ const Banner = () => {
                     <h1 className='text-[80px] font-medium leading-[100%] mt-4'>
                         Fresh Fruits and Vegetables
                     </h1>
-                    <p className='mt-4 text-sm w-4/5'>
+                    <p className='mt-4 text-sm w-4/5 font-secondary'>
                         At Fresh Harvests, we are passionate about providing you
                         with the freshest and most flavorful fruits and
                         vegetables
