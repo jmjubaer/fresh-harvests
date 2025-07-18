@@ -1,5 +1,6 @@
 "use client";
 
+import SectionHeading from "@/components/shered/ui/SectionHeading";
 import SectionTag from "@/components/shered/ui/SectionTag";
 import { useGetAllProductsQuery } from "@/redux/features/product/productApi";
 
@@ -8,13 +9,13 @@ const Products = () => {
     // console.log(data);
     // console.log(isError);
     return (
-        <div className="container pt-40">
-            <div className='w-[40%] mx-auto text-center'>
-                <SectionTag tag='Our Products' />
-                <h2 className="mt-4 text-5xl font-medium">Our Fresh Products</h2>
-                <p className="mt-4 text-sm font-secondary">We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients.</p>
-            </div>
-            <div className="mt-8"></div>
+        <div className='container pt-40'>
+            <SectionHeading
+                tag='Our Products'
+                title='Our Fresh Products'
+                description='We pride ourselves on offering a wide variety of fresh and
+                flavorful fruits, vegetables, and salad ingredients.'></SectionHeading>
+            <div className='mt-8'></div>
         </div>
     );
 };
