@@ -1,9 +1,54 @@
 import Navbar from "@/components/shered/Navbar";
-
+import Image from "next/image";
+import product from "@/assets/special-product.png";
+import arrow from "@/assets/arrow.png";
+import playstore from "@/assets/play.png";
+import applestore from "@/assets/app.png";
 const Banner = () => {
     return (
-        <div className="bg-[#eeecec] w-full h-screen">
-            <Navbar/>
+        <div className='bg-[#eeecec] w-full min-h-screen banner_bg relative pb-36'>
+            <Navbar />
+            <div className='container mt-20 '>
+                <div className='w-1/2'>
+                    <span className='bg-[#749B3F]/10 text-[#749B3F] px-2 py-1 rounded text-lg'>
+                        Welcome to Fresh Harvest
+                    </span>
+                    <h1 className='text-[80px] font-medium leading-[100%] mt-4'>
+                        Fresh Fruits and Vegetables
+                    </h1>
+                    <p className='mt-4 text-sm w-4/5'>
+                        At Fresh Harvests, we are passionate about providing you
+                        with the freshest and most flavorful fruits and
+                        vegetables
+                    </p>
+                    <button className='text-white bg-primary px-8 py-4 rounded-lg mt-8'>
+                        Shop Now
+                    </button>
+                    <Image
+                        src={arrow}
+                        alt='arrow '
+                        className='absolute  left-[10%] '
+                    />
+
+                    {/* product card */}
+                    <div className='ml-[30%]'>
+                        {/* Todo: make dynamic */}
+                        <Image src={product} alt='special product' />
+                    </div>
+                    <div className=''>
+                        <p className='text-sm'>Download App:</p>
+                        <div className='flex items-center'>
+                            <button>
+                                <Image src={applestore} alt='apple store' className="w-36"/>
+                            </button>{" "}
+                            <button>
+                                <Image src={playstore} alt='play store' className="w-36"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='absolute top-0 right-0 h-full w-[30%] bg-[#749B3F] -z-10'></div>
         </div>
     );
 };

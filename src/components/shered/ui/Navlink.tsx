@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 type IProps = {
@@ -10,14 +11,9 @@ const NavLink = ({ href, children }: IProps) => {
 
     const isActive = pathName === hrefPath;
     return (
-        <Link
-            href={href}
-            className={
-                isActive
-                    ? "text-primary font-bold"
-                    : "text-gray-700 hover:text-primary transition-colors font-medium text-sm"
-            }>
+        <Link href={href} className={"relative"}>
             {children}
+            <span></span>
         </Link>
     );
 };
