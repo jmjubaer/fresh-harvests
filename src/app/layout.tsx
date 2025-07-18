@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Questrial, Rubik } from "next/font/google";
 import "./globals.css";
 import Providers from "@/providers";
+import Footer from "@/components/shered/Footer";
 
 const rubik = Rubik({
     variable: "--font-Rubik",
@@ -30,6 +31,7 @@ export default function RootLayout({
             <body
                 className={`${rubik.className} ${questrial.variable} antialiased`}>
                 <Providers>{children}</Providers>
+                <Footer />
             </body>
         </html>
     );
