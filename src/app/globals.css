@@ -28,5 +28,6 @@
 
 .banner_bg {
     background: url("../assets/banner.png") no-repeat right bottom;
-    /* background-color: #749B3F ; */
+    /* background-color: #f1f1f1 ;  */
+    /* z-index: 999; */
 }

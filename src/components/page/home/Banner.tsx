@@ -4,15 +4,14 @@ import product from "@/assets/special-product.png";
 import arrow from "@/assets/arrow.png";
 import playstore from "@/assets/play.png";
 import applestore from "@/assets/app.png";
+import SectionTag from "@/components/shered/ui/SectionTag";
 const Banner = () => {
     return (
-        <div className='bg-[#eeecec] w-full min-h-screen banner_bg relative pb-36'>
+        <div className=' w-full min-h-screen banner_bg relative pb-36'>
             <Navbar />
             <div className='container mt-20 '>
                 <div className='w-1/2'>
-                    <span className='bg-[#749B3F]/10 text-[#749B3F] px-2 py-1 rounded text-lg'>
-                        Welcome to Fresh Harvest
-                    </span>
+                    <SectionTag tag='Welcome to Fresh Harvest' />
                     <h1 className='text-[80px] font-medium leading-[100%] mt-4'>
                         Fresh Fruits and Vegetables
                     </h1>
@@ -39,10 +38,18 @@ const Banner = () => {
                         <p className='text-sm'>Download App:</p>
                         <div className='flex items-center'>
                             <button>
-                                <Image src={applestore} alt='apple store' className="w-36"/>
+                                <Image
+                                    src={applestore}
+                                    alt='apple store'
+                                    className='w-36'
+                                />
                             </button>{" "}
                             <button>
-                                <Image src={playstore} alt='play store' className="w-36"/>
+                                <Image
+                                    src={playstore}
+                                    alt='play store'
+                                    className='w-36'
+                                />
                             </button>
                         </div>
                     </div>
