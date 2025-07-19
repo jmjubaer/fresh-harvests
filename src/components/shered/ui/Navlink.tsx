@@ -11,7 +11,7 @@ const NavLink = ({ href, children }: IProps) => {
 
     const isActive = pathName === hrefPath;
     return (
-        <Link href={href} className={"relative"}>
+        <Link href={href} className={""}>
             {children}
             <span></span>
         </Link>
