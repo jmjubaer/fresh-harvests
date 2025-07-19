@@ -4,7 +4,7 @@ import SectionTag from "@/components/shered/ui/SectionTag";
 import ButtonOutline from "@/components/shered/ui/ButtonOutline";
 const About = () => {
     return (
-        <div className="grid grid-cols-2 gap-10 container items-center">
+        <div className="grid grid-cols-2 gap-10 container items-center pb-[150px] -mt-10">
             <div className="">
                 <Image src={aboutImage} alt="About section image"/>
             </div>

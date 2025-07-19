@@ -1,6 +1,7 @@
 import Navbar from "@/components/shered/Navbar";
 import Image from "next/image";
 import product from "@/assets/special-product.png";
+import banner from "@/assets/banner.png";
 import arrow from "@/assets/arrow.png";
 import playstore from "@/assets/play.png";
 import applestore from "@/assets/app.png";
@@ -55,7 +56,8 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute top-0 right-0 h-full w-[30%] bg-[#749B3F] -z-10'></div>
+            <div className='absolute top-0 right-0 h-full w-[30%] bg-[#749B3F] '></div>
+            <Image src={banner} alt='special product' className='absolute right-0 z-10 bottom-0 w-[45%]' />
         </div>
     );
 };

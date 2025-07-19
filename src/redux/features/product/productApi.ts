@@ -17,7 +17,13 @@ const productApi = baseApi.injectEndpoints({
                 };
             },
         }),
+        getAllCategory: builder.query({
+            query: () => ({
+                url: "/category ",
+                method: "GET",
+            }),
+        }),
     }),
 });
 
-export const { useGetAllProductsQuery } = productApi;
+export const { useGetAllProductsQuery, useGetAllCategoryQuery } = productApi;

@@ -36,8 +36,14 @@ const Blogs = () => {
                         <p className='text-lg font-secondary text-[#4A4A52] mt-6'>
                             {blog.date}
                         </p>
-                        <h3 className="text-lg font-medium mt-2">{blog.title}</h3>
-                        <a href="#" className="text-primary font-semibold hover:underline flex items-center gap-2 mt-4 w-fit">Read More <FaArrowRightLong /></a>
+                        <a href='#' className='text-lg font-medium mt-2'>
+                            {blog.title}
+                        </a>
+                        <a
+                            href='#'
+                            className='text-primary font-semibold hover:underline flex items-center gap-2 mt-4 w-fit'>
+                            Read More <FaArrowRightLong />
+                        </a>
                     </div>
                 ))}
             </div>
