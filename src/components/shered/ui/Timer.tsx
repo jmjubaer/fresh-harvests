@@ -2,7 +2,11 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
 
-function MyTimer({ expiryTimestamp }) {
+type MyTimerProps = {
+    expiryTimestamp: Date;
+};
+
+export function MyTimer({ expiryTimestamp }: MyTimerProps) {
     const {
         totalSeconds,
         milliseconds,
@@ -22,26 +26,25 @@ function MyTimer({ expiryTimestamp }) {
     });
 
     return (
-        <div style={{ textAlign: "center" }}>
-            <h1>react-timer-hook </h1>
-            <p>Timer Demo</p>
-            <div style={{ fontSize: "100px" }}>
-                <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:
-                <span>{seconds}</span>:<span>{milliseconds}</span>
+        <div>
+            <div className='flex items-center gap-6 mt-8 z-10'>
+                <div className='p-7 pb-3 text-center bg-white rounded-lg w-fit '>
+                    <span className='block text-[40px]'>0{days}</span>
+                    <span className='text-lg text-secondary'>Days</span>
+                </div>
+                <div className='p-7 pb-3 text-center bg-white rounded-lg w-fit '>
+                    <span className='block text-[40px]'>{hours}</span>
+                    <span className='text-lg text-secondary'>Hour</span>
+                </div>
+                <div className='p-7 pb-3 text-center bg-white rounded-lg w-fit '>
+                    <span className='block text-[40px]'>{minutes}</span>
+                    <span className='text-lg text-secondary'>Min</span>
+                </div>
+                <div className='p-7 pb-3 text-center bg-white rounded-lg w-fit '>
+                    <span className='block text-[40px]'>{seconds}</span>
+                    <span className='text-lg text-secondary'>Second</span>
+                </div>
             </div>
-            <p>{isRunning ? "Running" : "Not running"}</p>
-            <button onClick={start}>Start</button>
-            <button onClick={pause}>Pause</button>
-            <button onClick={resume}>Resume</button>
-            <button
-                onClick={() => {
-                    // Restarts to 5 minutes timer
-                    const time = new Date();
-                    time.setSeconds(time.getSeconds() + 300);
-                    restart(time);
-                }}>
-                Restart
-            </button>
         </div>
     );
 }
