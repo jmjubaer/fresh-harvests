@@ -42,7 +42,10 @@ const Navbar = ({ home }: { home?: boolean }) => {
                     </button>
                 </nav>
                 {/* Mobile Menu */}
-                <div className='flex items-center gap-5 z-20 text-white'>
+                <div
+                    className={`flex items-center gap-5 z-20 block lg:hidden ${
+                        home ? " text-white" : "text-secondary"
+                    }`}>
                     <Link href='/' className=' flex items-center gap-3'>
                         <span className='relative'>
                             <FaCartShopping className='' />
@@ -54,7 +57,7 @@ const Navbar = ({ home }: { home?: boolean }) => {
                     </Link>
                     <button
                         onClick={() => setOpen(true)}
-                        className='text-xl  z-20 block lg:hidden'>
+                        className='text-xl  z-20 '>
                         <FaBars />
                     </button>
                 </div>
