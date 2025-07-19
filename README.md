@@ -31,3 +31,18 @@ A modern, responsive web application built with Next.js and TypeScript for manag
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+
+### 2.Install Dependencies
+
+
+```bash
+npm install
+```
+
+## 🏗️ Steps to Build and Deploy the Application
+
+```bash
+npm run build
+```
+
