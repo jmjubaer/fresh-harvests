@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionTag = ({ tag }: { tag: string }) => {
     return (
-        <span className='bg-[#749B3F]/10 text-[#749B3F] px-2 py-1 rounded text-lg'>
+        <span className='bg-[#749B3F]/10 capitalize text-[#749B3F] px-2 py-1 rounded text-lg'>
             {tag}
         </span>
     );

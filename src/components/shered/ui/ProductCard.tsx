@@ -1,21 +1,27 @@
 import { TProduct } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProductCard = ({ product }: { product: TProduct }) => {
     return (
-        <div
-            className='px-3 pt-2.5 pb-5 bg-white rounded-lg shadow-xl border border-[#F4F6F6] cursor-pointer group'>
+        <div className='px-3 pt-2.5 pb-5 bg-white rounded-lg shadow-xl border border-[#F4F6F6] cursor-pointer group'>
             <div className='bg-[#F4F6F6] rounded-lg'>
                 <Image
                     src={product.images[0]}
                     alt={product.productName}
                     width={200}
                     height={200}
-                    className='  h-52 object-contain mx-auto bg-[#F4F6F6] '
+                    className='w-full h-52 object-contain mx-auto bg-[#F4F6F6] rounded-lg'
                 />
             </div>
             <div className='mt-3 text-center'>
-                <h3 className='text-lg font-medium'>{product.productName}</h3>
+                <Link
+                    href={`/products/${product.id}`}
+                    className='text-lg font-medium '>
+                    <span className='text-primary-text'>
+                        {product.productName}
+                    </span>
+                </Link>
                 <p className='mt-2 text-[#4A4A52] text-lg font-secondary'>
                     ${product.price.toFixed(2)}/pcs
                 </p>

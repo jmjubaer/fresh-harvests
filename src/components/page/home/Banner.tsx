@@ -9,7 +9,7 @@ import SectionTag from "@/components/shered/ui/SectionTag";
 const Banner = () => {
     return (
         <div className=' w-full min-h-screen banner_bg relative pb-36'>
-            <Navbar />
+            <Navbar home/>
             <div className='container mt-20 '>
                 <div className='w-1/2'>
                     <SectionTag tag='Welcome to Fresh Harvest' />

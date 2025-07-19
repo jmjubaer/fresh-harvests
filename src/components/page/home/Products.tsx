@@ -53,7 +53,7 @@ const Products = () => {
                                 selectedCategory === category?.categoryName
                                     ? "bg-secondary text-white "
                                     : ""
-                            } px-6 py-3 text-[#A6A6A6] rounded-md  text-lg border cursor-pointer`}>
+                            } px-6 py-3 text-[#A6A6A6] rounded-md  text-lg border cursor-pointer capitalize`}>
                             {category?.categoryName}
                         </button>
                     ))}

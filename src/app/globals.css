@@ -2,7 +2,7 @@
 
 :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #212337;
 }
 
 @theme inline {
@@ -10,13 +10,6 @@
     --color-primary: #ff6a1a;
     --color-secondary: #749b3f;
     --font-secondary: var(--font-Questrial);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
 }
 
 body {
@@ -28,8 +21,40 @@ body {
 }
 
 .banner_bg {
-    background: 
-        linear-gradient(180deg, #f1f1f1, #f1f1f1);
+    background: linear-gradient(180deg, #f1f1f1, #f1f1f1);
     /* background-color: #f1f1f1 ;  */
     /* z-index: 999; */
+}
+
+.ant-tabs .ant-tabs-tab-btn {
+    border: 1px solid #d9d9d9 !important;
+    color: #a6a6a6 !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    border-radius: 8px !important;
+}
+
+.ant-tabs .ant-tabs-tab-btn:focus:not(:focus-visible),
+.ant-tabs .ant-tabs-tab-remove:focus:not(:focus-visible),
+.ant-tabs .ant-tabs-tab-btn:active,
+.ant-tabs .ant-tabs-tab-remove:active {
+    background: #749b3f !important;
+    border: 1px solid #749b3f !important;
+    color: #ffffff !important;
+}
+.ant-tabs .ant-tabs-ink-bar {
+    background: transparent !important;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    background: #749b3f !important;
+    border: 1px solid #749b3f !important;
+    color: #ffffff !important;
+}
+.ant-tabs .ant-tabs-tab:hover {
+    color: #749b3f !important;
+}
+.ant-tabs-top >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-16dneet).ant-tabs-bottom >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-16dneet).ant-tabs-top >div>.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-16dneet).ant-tabs-bottom >div>.ant-tabs-nav::before {
+   
+    border-bottom: 0px solid #f0f0f0 !important;
+ 
 }

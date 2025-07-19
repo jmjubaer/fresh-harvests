@@ -29,8 +29,10 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body
-                className={`${rubik.className} ${questrial.variable} antialiased`}>
-                <Providers>{children}</Providers>
+                className={`${rubik.className} ${questrial.variable} antialiased  text-primary-text`}>
+                <div className='min-h-screen'>
+                    <Providers>{children}</Providers>
+                </div>
                 <Footer />
             </body>
         </html>
