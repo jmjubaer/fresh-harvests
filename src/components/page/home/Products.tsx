@@ -33,14 +33,14 @@ const Products = () => {
                 spinning={isLoading || isCategoryLoading}
                 size='large'>
                 {" "}
-                <div className='mx-auto w-fit mt-4 flex items-center gap-6'>
+                <div className='mx-auto w-fit mt-4 flex items-center sm:gap-6 gap-3'>
                     <button
                         onClick={() => setSelectedCategory("All")}
                         className={`${
                             selectedCategory === "All"
                                 ? "bg-secondary text-white "
                                 : ""
-                        } px-6 py-3 text-[#A6A6A6] rounded-md  text-lg border cursor-pointer`}>
+                        } md:px-6 px-3 md:py-3 py-2 text-[#A6A6A6] rounded-md  sm:text-lg text-xs border cursor-pointer`}>
                         All
                     </button>
                     {categoryData?.data?.map((category: TCategory) => (
@@ -53,12 +53,12 @@ const Products = () => {
                                 selectedCategory === category?.categoryName
                                     ? "bg-secondary text-white "
                                     : ""
-                            } px-6 py-3 text-[#A6A6A6] rounded-md  text-lg border cursor-pointer capitalize`}>
+                            } md:px-6 px-3 md:py-3 py-2 text-[#A6A6A6] rounded-md  md:text-lg text-xs border cursor-pointer capitalize`}>
                             {category?.categoryName}
                         </button>
                     ))}
                 </div>
-                <div className='mt-8 grid grid-cols-4 gap-6 min-h-screen'>
+                <div className='mt-8 grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5 min-h-screen'>
                     {data?.data?.slice(0, 8).map((product: TProduct) => (
                         <ProductCard key={product.id} product={product} />
                     ))}

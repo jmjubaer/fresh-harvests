@@ -18,18 +18,18 @@ const Testimonial = () => {
                 tag='Testimonial'
                 title='What Our Customers Say'
                 description="Don't just take our word for it—here's what some of our customers have to say about their experience with Fresh Harvest:"></SectionHeading>
-            <div className='w-4/5 mx-auto mt-8'>
+            <div className='lg:w-4/5 mx-auto mt-8'>
                 <Swiper
                     pagination={true}
                     loop={true}
                     modules={[Pagination]}
                     className='mySwiper'>
                     <SwiperSlide>
-                        <div className='grid grid-cols-3 items-center gap-8'>
+                        <div className='grid sm:grid-cols-3 items-center gap-8'>
                             <div className=''>
-                                <Image src={image} alt='reviewer image' />
+                                <Image src={image} alt='reviewer image' className="mx-auto"/>
                             </div>
-                            <div className='p-8 bg-[#F4F6F6] col-span-2 h-fit rounded-3xl'>
+                            <div className='p-8 bg-[#F4F6F6] sm:col-span-2 h-fit rounded-3xl'>
                                 <p className='text-xl font-secondary'>
                                     &quot; I absolutely love Fresh Harvest! The
                                     quality of their produce is outstanding.
@@ -49,11 +49,11 @@ const Testimonial = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='grid grid-cols-3 items-center gap-8'>
+                        <div className='grid sm:grid-cols-3 items-center gap-8'>
                             <div className=''>
-                                <Image src={image} alt='reviewer image' />
+                                <Image src={image} alt='reviewer image' className="mx-auto"/>
                             </div>
-                            <div className='p-8 bg-[#F4F6F6] col-span-2 h-fit rounded-3xl'>
+                            <div className='p-8 bg-[#F4F6F6] sm:col-span-2 h-fit rounded-3xl'>
                                 <p className='text-xl font-secondary'>
                                     &quot; I absolutely love Fresh Harvest! The
                                     quality of their produce is outstanding.
@@ -73,11 +73,11 @@ const Testimonial = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='grid grid-cols-3 items-center gap-8'>
+                        <div className='grid sm:grid-cols-3 items-center gap-8'>
                             <div className=''>
-                                <Image src={image} alt='reviewer image' />
+                                <Image src={image} alt='reviewer image' className="mx-auto"/>
                             </div>
-                            <div className='p-8 bg-[#F4F6F6] col-span-2 h-fit rounded-3xl'>
+                            <div className='p-8 bg-[#F4F6F6] sm:col-span-2 h-fit rounded-3xl'>
                                 <p className='text-xl font-secondary'>
                                     &quot; I absolutely love Fresh Harvest! The
                                     quality of their produce is outstanding.

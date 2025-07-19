@@ -32,7 +32,7 @@ const DetailsSection = ({ description }: { description: string }) => {
             key: "1",
             label: "Description",
             children: (
-                <p className='px-8 py-10 bg-[#F4F6F6] rounded-3xl'>
+                <p className='px-8 py-10 bg-[#F4F6F6] rounded-3xl lg:w-[70%]  '>
                     {description}
                 </p>
             ),
@@ -41,7 +41,7 @@ const DetailsSection = ({ description }: { description: string }) => {
             key: "2",
             label: "Reviews (1)",
             children: (
-                <div className=' bg-[#F4F6F6] p-5 rounded-3xl'>
+                <div className=' bg-[#F4F6F6] p-5 rounded-3xl lg:w-[70%]  '>
                     <div className='flex gap-3 '>
                         <div className='w-12'>
                             <FaCircleUser className='text-5xl text-gray-300' />

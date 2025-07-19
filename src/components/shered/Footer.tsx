@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className='bg-[#F4F6F6] pt-16'>
             <div className='container'>
-                <div className='grid grid-cols-4 justify-center'>
+                <div className='grid lg:grid-cols-4 sm:grid-cols-2 justify-between'>
                     <div className='flex flex-col justify-between'>
                         <Logo />
                         <div className=''>
@@ -37,7 +37,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-fit mx-auto'>
+                    <div className='w-fit lg:mx-auto'>
                         <h3 className='text-lg font-medium'>Quick links 1</h3>
                         <ul className='text-sm'>
                             <li className='my-3 text-[#4A4A52]'>
@@ -57,7 +57,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>{" "}
-                    <div className='w-fit mx-auto'>
+                    <div className='w-fit lg:mx-auto'>
                         <h3 className='text-lg font-medium'>Quick links 2</h3>
                         <ul className='text-sm'>
                             <li className='my-3 text-[#4A4A52]'>
@@ -122,17 +122,22 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="py-6 border-t border-[#D9D9D9] mt-8 flex items-center justify-between">
+                <div className='py-6 border-t border-[#D9D9D9] mt-8 flex items-center sm:justify-between justify-center flex-col-reverse gap-7 sm:flex-row flex-wrap sm:flex-nowrap'>
                     <p className=' text-xs text-[#4A4A52]'>
                         © 2023 Fresh Harvests. All rights reserved.
                     </p>
-                    <ul className="flex items-center gap-3">
-                        <li className="w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full"><FaTwitter /></li>
-                        <li className="w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full"><FaFacebookF /></li>
-                        <li className="w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full"><FaInstagram /></li>
+                    <ul className='flex items-center gap-3'>
+                        <li className='w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full'>
+                            <FaTwitter />
+                        </li>
+                        <li className='w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full'>
+                            <FaFacebookF />
+                        </li>
+                        <li className='w-8 h-8 bg-primary-text text-white flex items-center justify-center rounded-full'>
+                            <FaInstagram />
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </footer>
     );

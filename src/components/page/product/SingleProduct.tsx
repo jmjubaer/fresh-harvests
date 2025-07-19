@@ -33,35 +33,24 @@ const SingleProduct = ({ id }: { id: string }) => {
     return (
         <div className='mt-8 container'>
             <Spin tip='Loading' spinning={isLoading} size='large'>
-                <div className='grid grid-cols-2 gap-12'>
-                    <div className='h-full'>
+                <div className='grid lg:grid-cols-2 lg:gap-12'>
+                    <div className='lg:h-full'>
                         <Swiper
                             pagination={true}
                             loop={true}
                             modules={[Pagination]}
-                            className='mySwiper h-full'>
+                            className=' lg:h-full'>
                             {data?.data?.images.map((image: string) => (
                                 <SwiperSlide key={image}>
                                     <Image
-                                        width={500}
-                                        height={500}
+                                        width={300}
+                                        height={300}
                                         src={image}
                                         alt='Product image'
-                                        className='w-full h-full object-contain mx-auto rounded-lg border-2 border-[#F4F6F6] '
+                                        className='lg:w-full lg:h-full object-contain  rounded-lg border-2 border-[#F4F6F6] sm:w-4/5 mx-auto'
                                     />
                                 </SwiperSlide>
                             ))}{" "}
-                            {data?.data?.images.map((image: string) => (
-                                <SwiperSlide key={image}>
-                                    <Image
-                                        width={500}
-                                        height={500}
-                                        src={image}
-                                        alt='Product image'
-                                        className='w-full h-full object-contain mx-auto bg-[#F4F6F6] rounded-lg '
-                                    />
-                                </SwiperSlide>
-                            ))}
                         </Swiper>
                     </div>
                     <div className=''>
@@ -110,7 +99,7 @@ const SingleProduct = ({ id }: { id: string }) => {
                             </div>
                             <p>/kg</p>
                         </div>
-                        <div className='grid grid-cols-2 gap-7 mt-10'>
+                        <div className='grid sm:grid-cols-2 gap-7 mt-10'>
                             <button className='text-lg py-4 font-semibold cursor-pointer flex items-center gap-2.5 bg-[#F4F6F6] text-center rounded-lg justify-center'>
                                 <FaHeart className='text-2xl' /> Save as
                                 favorite

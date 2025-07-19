@@ -29,7 +29,7 @@ const Blogs = () => {
                 tag='Our Blog'
                 title='Fresh Harvest Blog'
                 description='Welcome to the Fresh Harvest Blog, your go-to resource for all things related to fresh produce, healthy eating, and culinary inspiration.'></SectionHeading>
-            <div className='grid grid-cols-3 gap-6 mt-10'>
+            <div className='grid md:grid-cols-3 gap-6 mt-10'>
                 {blogs_data?.map((blog, index) => (
                     <div key={index}>
                         <Image src={blog.image} alt={blog.title} />
